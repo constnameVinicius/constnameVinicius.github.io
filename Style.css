@@ -8,6 +8,9 @@
 :root{
     --mainColor:#2c1071;
 }
+body{
+    height: 100vh;
+}
 header{
     width: 80%;
     margin: auto;
@@ -83,6 +86,7 @@ section#about #about_subtitle{
     font-family: 'Oswald';
     text-align: center;
     font-size: 1.3em;
+    min-height: 150px;
     color: #fff;
     font-weight: 300;
     width: 700px;
@@ -99,7 +103,6 @@ section#experiences{
 }
 .card{
     position: relative;
-    height: 500px;
     min-width: 25%;
     max-width: 50%;
     background-color: white;
@@ -110,6 +113,7 @@ section#experiences{
     flex-shrink: 1;
     align-items: center;
     margin-left: 30px;
+    margin-bottom:150px;
     border-radius: 16px;
     box-shadow:0px 0px 42px rgba(0,0,0,0.120);
     transition: 0.4s all;
