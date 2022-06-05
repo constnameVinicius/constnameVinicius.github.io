@@ -201,11 +201,15 @@ ion-icon, i{
     .card .ex_title{
         font-size: 2.8em;
     }
+    section#experiences .card {
+        margin-top: -60px;
+    }
 }
 @media (max-width:590px){
     section#about{
         margin-top: 0px;
     }
+
     section#about #about_title{
         font-size: 2em;
         margin-top: 30px;
@@ -216,11 +220,20 @@ ion-icon, i{
     #intro_title{
         font-size:3em;
     }
+    #intro_subtitle{
+        width:400px;
+    }
     .subtitle{
         font-size: 1em;
     }
     #intro_img{
         display: none;
+    }
+    section#experiences .card {
+        margin-top: -60px;
+    }
+    section#experiences .card {
+        margin-top: -150px;
     }
 }
 @media (max-width: 450px){
