@@ -1,0 +1,264 @@
+*{
+    font-family: 'Roboto';
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --mainColor:#2c1071;
+}
+header{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:30px 60px;
+}
+a{
+    color: rgb(33, 33, 33);
+    text-decoration: none;
+}
+.logo a{
+    font-size: 3em;
+    font-family: 'Poppins';
+    font-weight: 200;
+}
+header ul {
+    list-style: none;
+}
+section#introduction{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0px;
+    /* border: 2px solid black; */
+}
+.title{
+    font-size: 4.6em;
+}
+#intro_title{
+    font-family: 'Oswald';
+    font-weight: 500;
+    color: var(--mainColor);
+}
+.subtitle{
+    font-weight: 400;
+    font-size: 1.4em;
+}
+#intro_subtitle{
+    font-family: 'Oswald';
+    font-weight: 300;
+    letter-spacing: 1.2px;
+    margin-top: 30px;
+}
+#intro_img{
+    position: absolute;
+    justify-self: end;
+    min-width: 800px;
+    max-width: 1200px;
+    top: 295px;
+    border-radius: 20px;
+    box-shadow: 0px 24px 24px rgba(0,0,0,0.120);
+}
+
+section#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 500px;
+    background-color: var(--mainColor);
+    min-height:85vh;
+}
+section#about #about_title{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 3.5em;
+    margin-top: 300px;
+    color: white;
+}
+section#about #about_subtitle{
+    font-family: 'Oswald';
+    text-align: center;
+    font-size: 1.3em;
+    color: #fff;
+    font-weight: 300;
+    width: 700px;
+    margin-top: 20px;
+    margin-bottom: 180px;
+}
+section#experiences{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -150px;
+    /* background-color: #1f0c4f; */
+}
+.card{
+    position: relative;
+    height: 500px;
+    min-width: 25%;
+    max-width: 50%;
+    background-color: white;
+    color: black;
+    padding:30px 60px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    align-items: center;
+    margin-left: 30px;
+    border-radius: 16px;
+    box-shadow:0px 0px 42px rgba(0,0,0,0.120);
+    transition: 0.4s all;
+}
+.card:hover{
+    transform: translateY(20px);
+}
+.card .ex_title{
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size:3.5em;
+    letter-spacing: -0.5;
+    text-align: center;
+}
+.card .ex_subtitle{
+    font-family: 'Poppins';
+    font-weight: 550;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
+.card .ex_list{
+    width: 100%;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+.card .ex_list .l-item{
+    font-family: 'Poppins';
+    font-weight: 450;
+    font-size: 1.2em;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+ion-icon, i{
+    margin-left: 10px;
+}
+@media (max-width:1026px){
+
+    section#experiences{
+        flex-direction: column;
+    }
+    section#experiences .card{ margin-top: 10px;}
+    #intro_subtitle{
+        width: 600px;
+        text-align: center;
+    }
+}
+@media (max-width:850px){
+    section#about #about_title{
+        font-size: 2.8em;
+    }
+    section#about #about_subtitle{
+        font-size: 1.2em;
+        letter-spacing: 1.1px;
+    }
+}
+@media (max-width:800px){
+    #intro_img{
+        max-width:300px;
+        min-width:600px;
+    }
+}
+@media (max-width:740px){
+    section#about #about_title{
+        font-size: 2.2em;
+    }
+    section#about #about_subtitle{
+        font-size: 1.1em;
+        letter-spacing: 1.1px;
+        width: 600px;
+    }
+    .card .ex_list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card .ex_list .l-item{
+        font-size: 1em;
+    }
+    .card .ex_subtitle{
+        font-size: 1em;
+    }
+    .card .ex_title{
+        font-size: 2.8em;
+    }
+}
+@media (max-width:590px){
+    section#about{
+        margin-top: 0px;
+    }
+    section#about #about_title{
+        font-size: 2em;
+        margin-top: 30px;
+    }
+    section#about #about_subtitle{
+        width: 350px;
+    }
+    #intro_title{
+        font-size:3em;
+    }
+    .subtitle{
+        font-size: 1em;
+    }
+    #intro_img{
+        display: none;
+    }
+}
+@media (max-width: 450px){
+    section#about{
+        margin:0px;
+    }
+    section#about #about_title{
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+    section#about #about_subtitle{
+        width: 300px;
+    }
+    section#experiences{
+        margin-top: -410px;
+    }
+    .card{
+        width: 100%;
+    }
+    .card .ex_subtitle{
+        font-size: 0.6em;
+    }
+    .card .ex_title{
+        font-size: 1.8em;
+    }
+    #intro_title{
+        font-size: 2em;
+    }
+    #intro_subtitle{
+        font-size: 0.9em;
+        width: 320px;
+    }
+    #intro_img{
+        display: none;
+    }
+}
+@media (max-width:400px){
+    section#experiences{
+        margin-top: -300px;
+    }
+}
