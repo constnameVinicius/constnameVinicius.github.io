@@ -207,9 +207,6 @@ ion-icon, i{
     .card .ex_title{
         font-size: 2.8em;
     }
-    section#experiences .card {
-        margin-top: -60px;
-    }
 }
 @media (max-width:590px){
     section#about{
@@ -286,5 +283,17 @@ ion-icon, i{
     section#about #about_title{
         font-size: 1.7em;
         text-align: center;
+    }
+}
+@media (max-width:320px){
+    #intro_subtitle{
+        width: 310px;
+    }
+    #about_title{
+        font-size: 1em;
+    }
+    section#about #about_subtitle {
+        max-width: 250px;
+        min-height: 400px;
     }
 }
