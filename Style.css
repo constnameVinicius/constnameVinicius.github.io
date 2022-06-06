@@ -86,7 +86,6 @@ section#about #about_subtitle{
     font-family: 'Oswald';
     text-align: center;
     font-size: 1.3em;
-    min-height: 230px;
     color: #fff;
     font-weight: 300;
     width: 700px;
@@ -181,6 +180,9 @@ ion-icon, i{
         max-width:300px;
         min-width:600px;
     }
+    #about_title{
+        margin-top: 150px;
+    }
 }
 @media (max-width:740px){
     section#about #about_title{
@@ -218,7 +220,7 @@ ion-icon, i{
     }
     section#about #about_subtitle{
         width: 350px;
-        min-height: 250px;
+        min-height: 180px;;
     }
     #intro_title{
         font-size:3em;
@@ -231,6 +233,7 @@ ion-icon, i{
     }
     #intro_img{
         min-width:400px;
+        top: 195px;
     }
 }
 @media (max-width: 490px){
