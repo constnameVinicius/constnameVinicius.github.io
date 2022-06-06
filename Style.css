@@ -7,6 +7,7 @@
 
 :root{
     --mainColor:#2c1071;
+    --secondColor:#210f4d;
 }
 body{
     height: 100vh;
@@ -158,16 +159,65 @@ ion-icon, i{
 #my_work{
     width: 100%;
     text-align: center;
+    min-height: 70vh;
 }
 #my_work_title{
     color: var(--mainColor);
+    margin-top: 40px;
 }
 #my_work #works{
-    width: 70%;
-    margin:0 auto;
+    width: 90%;
+    margin:100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#my_work #works .project{
+    width: 50%;
+    border: none;
+    box-shadow: 0px 0px 24px rgba(0,0,0,0.30);
+    overflow: hidden;
+    border-radius: 20px;
+}
+#my_work #works .project img{
+    width: 100%;
+}
+#my_work #works .project:nth-child(1){
+    margin-right: 30px;
+}
+#my_work #works .project a{
+    padding:10px 20px;
+    display: block;
+    width: clamp(50px, 200px, 250px);
+    margin:10px auto;
+    border-radius: 12px 8px;
+    border:none;
+    background-color: var(--secondColor);
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+#my_work #works .project a:hover{
+    background: none;
+    box-shadow: 0px 0px 24px rgba(0,0,0,0.20);
+    color: black;
+}
+footer{
+    width: 100%;
+    margin-top:150px;
+    padding:40px;
+    background-color: #180c36;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 50px;
+}
+#contact h3{
+    font-family: 'Poppins';
+    letter-spacing: 2px;
+    font-weight: 600;
 }
 @media (max-width:1026px){
-
     section#experiences{
         flex-direction: column;
     }
@@ -175,6 +225,18 @@ ion-icon, i{
     #intro_subtitle{
         width: 600px;
         text-align: center;
+    }
+    #my_work #works{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #my_work #works .project:nth-child(1){
+        margin-right: 0px;
+        margin-bottom:80px;
+    }
+    #my_work #works .project{
+        width: 100%;
     }
 }
 @media (max-width:850px){
@@ -246,6 +308,14 @@ ion-icon, i{
     .card .ex_title {
         font-size: 1.8em;
     }
+    #my_work_title{
+        margin:0px;
+        font-size: 3.6em;
+    }
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
 }
 @media (max-width: 490px){
     #intro_img{
@@ -282,6 +352,13 @@ ion-icon, i{
     #intro_subtitle{
         font-size: 0.9em;
         width: 320px;
+    }
+    #my_work_title{
+        margin-top:60px;
+        font-size: 3em;
+    }
+    #my_work #works {
+        margin:50px auto;
     }
 }
 @media (max-width:400px){
