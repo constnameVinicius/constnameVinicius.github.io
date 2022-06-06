@@ -211,15 +211,14 @@ ion-icon, i{
 }
 @media (max-width:590px){
     section#about{
-        margin-top: 0px;
+        margin-top: 150px;
     }
-
     section#about #about_title{
         font-size: 2em;
-        margin-top: 30px;
     }
     section#about #about_subtitle{
         width: 350px;
+        min-height: 250px;
     }
     #intro_title{
         font-size:3em;
@@ -231,31 +230,28 @@ ion-icon, i{
         font-size: 1em;
     }
     #intro_img{
-        display: none;
+        min-width:400px;
     }
-    section#experiences .card {
-        margin-top: -60px;
-    }
-    section#experiences .card {
-        margin-top: -150px;
+}
+@media (max-width: 490px){
+    #intro_img{
+        max-width:300px;
+        min-width:390px;
+        min-height:290px;
+        top: 160px;
     }
 }
 @media (max-width: 450px){
-    section#about{
-        margin:0px;
-    }
+
     section#about #about_title{
-        font-size: 1.5em;
-        margin-top: 20px;
+        font-size: 1.8em;
     }
     section#about #about_subtitle{
-        width: 300px;
-    }
-    section#experiences{
-        margin-top: -410px;
+        width: 360px;
     }
     .card{
-        width: 100%;
+        max-width:340px;
+        margin: 0px auto;
     }
     .card .ex_subtitle{
         font-size: 0.6em;
@@ -270,12 +266,22 @@ ion-icon, i{
         font-size: 0.9em;
         width: 320px;
     }
-    #intro_img{
-        display: none;
-    }
 }
 @media (max-width:400px){
     section#experiences{
         margin-top: -300px;
+    }
+    #intro_img{
+        min-width:320px;
+        min-height:230px;
+        top: 190px;
+    }   
+    section#about #about_subtitle{
+        width: 320px;
+        min-height: 350px;
+    }
+    section#about #about_title{
+        font-size: 1.7em;
+        text-align: center;
     }
 }
