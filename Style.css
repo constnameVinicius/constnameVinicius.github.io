@@ -155,6 +155,17 @@ section#experiences{
 ion-icon, i{
     margin-left: 10px;
 }
+#my_work{
+    width: 100%;
+    text-align: center;
+}
+#my_work_title{
+    color: var(--mainColor);
+}
+#my_work #works{
+    width: 70%;
+    margin:0 auto;
+}
 @media (max-width:1026px){
 
     section#experiences{
@@ -232,6 +243,9 @@ ion-icon, i{
         min-width:400px;
         top: 195px;
     }
+    .card .ex_title {
+        font-size: 1.8em;
+    }
 }
 @media (max-width: 490px){
     #intro_img{
@@ -239,6 +253,9 @@ ion-icon, i{
         min-width:390px;
         min-height:290px;
         top: 160px;
+    }
+    .card .ex_title {
+        font-size: 1.8em;
     }
 }
 @media (max-width: 450px){
