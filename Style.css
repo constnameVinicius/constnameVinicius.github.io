@@ -180,6 +180,7 @@ ion-icon, i{
     border-radius: 20px;
 }
 #my_work #works .project img{
+    height: 100%;
     width: 100%;
 }
 #my_work #works .project:nth-child(1){
